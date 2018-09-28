@@ -1,37 +1,26 @@
 function incriptar(palabra){
-    for(var i=0; i<palabra.length;i++){
-        if(palabra[i] === 'm'){
-            palabra[i] = 0;
-        }
-        if(palabra[i] === 'u'){
-            palabra[i] = 1;
-        }
-        if(palabra[i] === 'r'){
-            palabra[i] = 2;
-        }
-        if(palabra[i] === 'c'){
-            palabra[i] = 3;
-        }
-        if(palabra[i] === 'i'){
-            palabra[i] = 4;
-        }
-        if(palabra[i] === 'e'){
-            palabra[i] = 5;
-        }
-        if(palabra[i] === 'l'){
-            palabra[i] = 6;
-        }
-        if(palabra[i] === 'a'){
-            palabra[i] = 7;
-        }
-        if(palabra[i] === 'g'){
-            palabra[i] = 8;
-        }
-        if(palabra[i] === 'o'){
-            palabra[i] = 9;
-        }
+    palabra = palabra.replace('m',0);
+    palabra = palabra.replace('u',1);
+    palabra = palabra.replace('r',2);
+    palabra = palabra.replace('c',3);
+    palabra = palabra.replace('i',4);
+    palabra = palabra.replace('e',5);
+    palabra = palabra.replace('l',6);
+    palabra = palabra.replace('a',7);
+    palabra = palabra.replace('g',8);
+    palabra = palabra.replace('o',9);
+    palabra = palabra.replace('M',0);
+    palabra = palabra.replace('U',1);
+    palabra = palabra.replace('R',2);
+    palabra = palabra.replace('C',3);
+    palabra = palabra.replace('I',4);
+    palabra = palabra.replace('E',5);
+    palabra = palabra.replace('L',6);
+    palabra = palabra.replace('A',7);
+    palabra = palabra.replace('G',8);
+    palabra = palabra.replace('O',9);
         
-    }
+    
     return palabra;
 }
 console.log(incriptar("murcielago"));
